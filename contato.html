@@ -42,6 +42,45 @@
                 <li class="breadcrumb-item active" aria-current="page">Contato</li>
             </ol>
         </nav>
+
+        <!--formulário-->
+        <form>
+
+            <div class="mb-3">
+                <label for="txtnome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="txtnome" minlength="10" maxlength="50" placeholder="Seu nome aqui">
+            </div>
+
+            <div class="mb-3">
+                <label for="txtdata" class="form-label">Data de nascimento</label>
+                <input type="date" class="form-control" id="txtdata">
+            </div>
+
+            <div class="mb-3">
+                <label for="txtidade" class="form-label">Idade</label>
+                <input type="number" class="form-control" id="txtidade" min="5" max="70" placeholder="Idade aqui" step="1">
+            </div>
+
+            <div class="mb-3">
+                <label for="txtsalario" class="form-label">Salário</label>
+                <input type="number" class="form-control" id="txtsalario" min="1600" placeholder="Salário aqui" step="0.01">
+            </div>
+
+            <div class="mb-3">
+                <label for="txtemail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="txtemail" aria-describedby="emailHelp" placeholder="Seu email aqui">
+                <div id="emailHelp" class="form-text">descrição da caixa.</div>
+            </div>
+            <div class="mb-3">
+                <label for="txtsenha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="txtsenha">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
